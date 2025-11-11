@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함백고등학교 졸업여행 - 부산: 꿈을 디자인하는 바다</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f0f2f5; color: #1a202c; }
+        
+        /* Hero Background: Dynamic Ocean Theme - Using a clear blue/sky color for the mood */
+        .hero-bg-busan { 
+            /* Placeholder for a visually appealing Busan ocean image */
+            background-image: linear-gradient(rgba(30, 64, 138, 0.75), rgba(59, 130, 246, 0.75)), url('https://placehold.co/1920x1080/1D4ED8/ffffff?text=Busan+Ocean+View+Placeholder'); 
+            background-size: cover;
+            background-position: center;
+        } 
+        /* Theme: Sky Blue (Ocean/Freshness) */
+        .nav-link { transition: color 0.3s, border-bottom-color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #2563eb; border-bottom-color: #2563eb; } /* blue-600 */
+        .tab-btn { transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+        .tab-btn.active { background-color: #1e40af; color: white; border-color: #1e40af; } /* blue-800 */
+        .timeline-item::before { content: ''; position: absolute; left: 11px; top: 12px; bottom: -12px; width: 2px; background-color: #94a3b8; } /* slate-400 */
+        .timeline-item:last-child::before { display: none; }
+        .timeline-dot { position: absolute; left: 0; top: 12px; width: 24px; height: 24px; border-radius: 50%; background-color: white; border: 4px solid #1e40af; } /* blue-800 */
+        
+        html { scroll-behavior: smooth; }
+        
+        /* Custom image placeholders for visual appeal until actual images are provided */
+        .placeholder-img {
+            height: 120px;
+            background-color: #e0f2f1; /* Light teal for water theme */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #0d9488; /* Dark teal */
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker Logo" class="h-8 w-auto">
+                    <!-- 요청에 따라 함백고 졸업여행 문구 삭제 완료 -->
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent active">소개</a>
+                        <a href="#highlight" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">여행 테마</a>
+                        <a href="#timeline" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">전체일정</a>
+                        <a href="#details" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">상세일정</a>
+                        <a href="#accommodation" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">숙소 안내</a>
+                        <a href="#emergency" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">비상연락</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-bg-busan text-white text-center flex items-center justify-center min-h-screen -mt-16">
+            <div class="container mx-auto px-4">
+                <p class="text-xl font-semibold text-blue-300">함백고등학교 졸업여행 | 꿈을 디자인하는 바다</p>
+                <h1 class="text-5xl md:text-7xl font-black mt-4 leading-tight">부산: 설렘을 가슴에, 미래를 눈앞에</h1>
+                
+                <div class="mt-8 max-w-3xl mx-auto bg-black/50 p-6 rounded-lg backdrop-blur-sm">
+                    <h2 class="text-2xl font-bold mb-4">💙 정선의 별들이 만나는 바다 낭만 투어</h2>
+                    <p class="text-lg">수능을 마치고 맞이하는 특별한 졸업여행! 내륙에서의 동경이었던 푸른 바다와 활기찬 대도시 부산을 동시에 경험합니다. 낭만적인 밤바다 크루즈부터 짜릿한 롯데월드까지, 친구들과 함께 최고의 추억을 만들고 스무 살의 꿈을 설계하는 2박 3일입니다.</p>
+                </div>
+                <div class="mt-8 flex flex-col md:flex-row justify-center gap-4 text-lg font-bold">
+                    <div class="bg-white/20 p-4 rounded-lg">🗓️ 2025.12.01 (월) ~ 12.03 (수) (2박 3일)</div>
+                    <div class="bg-white/20 p-4 rounded-lg">👨‍🎓 인원: 학생 26명 / 교사 4명 (총 30명)</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlight" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">✨ 졸업여행의 3가지 핵심 테마</h2>
+                <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+                     <div class="bg-blue-600 text-white p-6 rounded-lg shadow-2xl flex flex-col">
+                        <div class="placeholder-img bg-blue-500/20 text-white">⛴️ 부산 밤바다 크루즈 (낭만)</div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">1. 낭만: 바다의 설렘과 밤의 추억</h3>
+                        <p class="flex-grow mb-4 text-sm">정선에서는 볼 수 없었던 탁 트인 푸른 바다! 밤에는 **부산항 밤바다 크루즈**를 타고 화려한 야경 속에서 잊을 수 없는 낭만적인 졸업여행의 추억을 만듭니다.</p>
+                    </div>
+                    <div class="bg-teal-600 text-white p-6 rounded-lg shadow-2xl flex flex-col">
+                        <div class="placeholder-img bg-teal-500/20 text-white">🎢 롯데월드 + 송도 케이블카 (짜릿함)</div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">2. 짜릿함: 스릴 만끽, 자유 만끽</h3>
+                        <p class="flex-grow mb-4 text-sm">짜릿함과 자유를 만끽하는 하루! **롯데월드 어드벤처 부산**에서 마음껏 스트레스를 날리고, **송도 해상 케이블카**와 용궁 구름다리를 건너며 바다 위를 나는 듯한 스릴을 경험합니다.</p>
+                    </div>
+                    <div class="bg-indigo-600 text-white p-6 rounded-lg shadow-2xl flex flex-col">
+                        <div class="placeholder-img bg-indigo-500/20 text-white">🏙️ 국제시장 + 남포동 (새로운 시작)</div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">3. 미래: 대도시의 활기와 자유 시간</h3>
+                        <p class="flex-grow mb-4 text-sm">활기찬 국제시장, 남포동, 자갈치시장에서 부산의 에너지를 느낍니다. 도보 접근성이 뛰어난 숙소 근처에서 친구들과 함께 자유롭고 알찬 시간을 보냅니다.</p>
+                    </div>
+                </div>
+                <p class="mt-12 text-center text-xl font-semibold text-gray-800">함백고 학생들을 위한, **최고의 안전과 설렘**이 보장된 2박 3일 기획입니다.</p>
+            </div>
+        </section>
+
+        <section id="timeline" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">한눈에 보는 2박 3일 공식 일정</h2>
+                 <div class="max-w-3xl mx-auto">
+                    <div class="relative pl-8">
+                        <div class="timeline-item pb-12">
+                            <div class="timeline-dot"></div>
+                            <h3 class="text-xl font-bold mb-2">DAY 1: 부산 도착 & 바다 낭만</h3>
+                            <p class="text-gray-600">학교 출발, 태종대 및 송도 해상 케이블카/구름다리 체험 후, **밤바다 크루즈**로 부산 야경 만끽.</p>
+                        </div>
+                        <div class="timeline-item pb-12">
+                            <div class="timeline-dot"></div>
+                            <h3 class="text-xl font-bold mb-2">DAY 2: 롯데월드 & 남포동 자유</h3>
+                            <p class="text-gray-600">**롯데월드 어드벤처 부산**에서 하루 종일 자유롭게 즐긴 후, 숙소 근처 남포동/국제시장 **자유 관람**.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h3 class="text-xl font-bold mb-2">DAY 3: 아쿠아리움 & 귀가</h3>
+                            <p class="text-gray-600">해운대 **씨라이프 아쿠아리움** 관람 및 해운대 자유시간 후 학교로 귀가.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">상세 일정표 (2025.12.01 ~ 12.03)</h2>
+                <div class="max-w-6xl mx-auto">
+                    <div class="mb-8 flex flex-wrap justify-center border-b">
+                        <button class="tab-btn active text-lg font-bold py-3 px-6 border-b-2" data-tab="day1">DAY 1 (12/01)</button>
+                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day2">DAY 2 (12/02)</button>
+                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day3">DAY 3 (12/03)</button>
+                    </div>
+                    <div id="tabs-content" class="p-4 bg-gray-50 rounded-lg">
+                        <!-- Content will be rendered here by JS -->
+                    </div>
+                    <p class="text-center text-sm text-gray-500 mt-8">※ 상기 일정은 교통 및 현지 상황에 의해 시간 및 순서가 변동될 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="accommodation" class="py-16 md:py-24">
+             <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">🏨 숙소 안내: 그린핀베이 호텔 (확정, 2인 1실)</h2>
+                <div class="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
+                    <div class="placeholder-img h-64 text-2xl bg-blue-100 text-blue-700">그리핀베이 호텔 (남포동 도보권)</div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mt-8 text-lg">
+                        <div class="p-4 border-l-4 border-blue-700 bg-blue-50 rounded-r-lg">
+                            <h3 class="font-bold text-2xl mb-4 text-blue-900">📍 핵심 장점</h3>
+                            <ul class="space-y-3">
+                                <li><strong class="font-semibold text-gray-800">숙소 확정:</strong> **그린핀베이 호텔**로 최종 확정</li>
+                                <li><strong class="font-semibold text-gray-800">접근성 최상:</strong> 남포동, 국제시장, 자갈치시장 **도보 이동 가능**</li>
+                                <li><strong class="font-semibold text-gray-800">객실 구성:</strong> 학생들에게 최적화된 **2인 1실 트윈 베드** 기준</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 border-l-4 border-gray-700 bg-gray-50 rounded-r-lg">
+                            <h3 class="font-bold text-2xl mb-4 text-gray-900">🛌 학생 안전 및 관리</h3>
+                            <ul class="space-y-3">
+                                <li><strong class="font-semibold text-gray-800">보안:</strong> 교사 4명이 함께 투숙하며, 층별 학생 관리에 용이한 구조</li>
+                                <li><strong class="font-semibold text-gray-800">주변 환경:</strong> 번화가와 인접하지만 숙소 자체는 안전하고 조용함</li>
+                                <li><strong class="font-semibold text-gray-800">조식:</strong> 신선하고 다양한 메뉴의 **호텔 뷔페**로 든든한 하루 시작</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">비상 상황 대처 및 연락망</h2>
+                 <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-red-50 rounded-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-red-800 mb-4">긴급 연락처 (부산/여행자 보험)</h3>
+                        <ul class="space-y-2">
+                            <li><span class="font-semibold">경찰서:</span> 112</li>
+                            <li><span class="font-semibold">응급/화재:</span> 119</li>
+                            <li><span class="font-semibold">여행자 보험사:</span> (출발 전 최종 안내 예정)</li>
+                        </ul>
+                    </div>
+                     <div class="p-6 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="text-xl font-bold text-blue-800 mb-4">비상 연락 및 인솔 담당</h3>
+                        <ul class="space-y-2">
+                            <!-- 최종 확정된 담당자 정보 반영 -->
+                            <li><span class="font-semibold">담당 교수:</span> 도지원 (010-7192-2756)</li>
+                            <li><span class="font-semibold">실무 인솔:</span> 이재명 (010-9443-7881)</li>
+                            <li><span class="font-semibold">학교 인솔 교사:</span> (출발 전 최종 안내)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">함백고 졸업생 여러분에게</h2>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">여행은 곧 미래를 위한 영감입니다.</h3>
+                    <p class="text-lg text-gray-600">수능을 마친 여러분의 노력에 박수를 보냅니다. 이번 부산 여행은 단순히 쉬는 것을 넘어, 바다의 광활함처럼 넓은 시야와 새로운 가능성을 발견하는 시간이 되기를 바랍니다. 친구들과 소중한 추억을 만들고, 졸업 후 나아갈 새로운 길에 대한 영감을 얻어 가세요.</p>
+                    <p class="mt-6 font-bold text-xl">안전하고 즐거운 여행이 되도록 투어메이커가 함께하겠습니다.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-8 mx-auto mb-4 opacity-80">
+        <p>&copy; 2025 Tourmaker. All Rights Reserved.</p>
+        <p>함백고등학교 졸업여행 기획 및 운영</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            // --- 1. Nav Link Active Scroll ---
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.3 });
+            sections.forEach(section => observer.observe(section));
+            
+            // --- 2. Itinerary Tab Content (Finalized with optimal cruise time and confirmed hotel) ---
+            const scheduleData = {
+                day1: {
+                    title: 'DAY 1: 12월 1일 (월) - 바다와의 설레는 첫 만남',
+                    items: [
+                        { time: '08:00', desc: '학교 출발 (전용 버스)', icon: '🚌' },
+                        { time: '12:30 ~ 13:30', desc: '중식: **경기식당 (낚지볶음)**', icon: '🍽️' },
+                        { time: '13:30 ~ 16:00', desc: '부산의 명소 **태종대** 관람', icon: '⛰️' },
+                        { time: '16:30 ~ 17:30', desc: '바다 위를 걷다! **송도 해상 케이블카** 및 **용궁 구름다리** 체험 (도보 이동)', icon: '🚠' },
+                        { time: '17:30', desc: '숙소 이동 및 **호텔 체크인** (**그린핀베이 호텔** 확정)', icon: '🔑' },
+                        { time: '18:30', desc: '석식: **쿠우쿠우 (다이닝원 리브랜딩, Sushi-Roll & Salad Bar)** 뷔페', icon: '🍣' },
+                        { time: '19:30', desc: '<strong class="text-red-600">⭐ 낭만적인 밤바다 크루즈 탑승</strong> (동절기 기준, 석식 후 최적 동선)', icon: '⛴️' },
+                        { time: '21:30', desc: '숙소 복귀 및 **자유시간**', icon: '🛌' },
+                    ]
+                },
+                day2: {
+                    title: 'DAY 2: 12월 2일 (화) - 짜릿한 놀이와 대도시 자유 관람',
+                    items: [
+                        { time: '08:00 ~ 09:00', desc: '기상 및 **조식 (호텔 뷔페)**', icon: '🥐' },
+                        { time: '09:00 ~ 10:00', desc: '롯데월드 어드벤처 부산으로 이동', icon: '🚌' },
+                        { time: '10:00 ~ 17:00', desc: '짜릿함 만끽! **롯데월드 어드벤처 부산** 자유 이용', icon: '🎢' },
+                        { time: '중식', desc: '롯데월드 내 **밀쿠폰** 사용', icon: '🍔' },
+                        { time: '17:00 ~ 18:00', desc: '석식: **하루 샤브샤브 뷔페**', icon: '🍲' },
+                        { time: '18:30 ~ 19:00', desc: '숙소로 이동 및 복귀', icon: '🚌' },
+                        { time: '19:00 ~', desc: '숙소 도착 및 **자유시간** (남포동, 국제시장, 자갈치시장 등 도보 관람 가능)', icon: '🛍️' },
+                    ]
+                },
+                day3: {
+                    title: 'DAY 3: 12월 3일 (수) - 해운대 & 귀가',
+                    items: [
+                        { time: '08:00 ~ 09:00', desc: '기상 및 **조식 (호텔 뷔페)**, 짐정리 및 체크아웃', icon: '☕' },
+                        { time: '10:00 ~ 12:00', desc: '해운대 **씨라이프 아쿠아리움** 관람 및 해운대 자유시간', icon: '🐠' },
+                        { time: '12:00 ~ 13:00', desc: '중식: **국밥 + 수육**', icon: '🍚' },
+                        { time: '13:00 ~ 17:30', desc: '학교로 이동', icon: '🚌' },
+                        { time: '18:00 ~', desc: '학교 도착 후 귀가', icon: '🏠' },
+                    ]
+                }
+            };
+            
+            const tabsContainer = document.getElementById('tabs-content');
+            const tabButtons = document.querySelectorAll('.tab-btn');
+
+            function renderTabContent(day) {
+                const data = scheduleData[day];
+                let content = `<h3 class="text-2xl font-bold mb-6">${data.title}</h3><ul class="space-y-4">`;
+                data.items.forEach(item => {
+                    content += `<li class="flex items-start"><span class="text-2xl mr-4">${item.icon}</span><div><p class="font-bold text-gray-800">${item.time}</p><p class="text-gray-600">${item.desc}</p></div></li>`;
+                });
+                content += '</ul>';
+                
+                tabsContainer.innerHTML = content;
+            }
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    renderTabContent(button.dataset.tab);
+                });
+            });
+
+            // Initial load
+            renderTabContent('day1');
+        });
+    </script>
+</body>
+</html>
