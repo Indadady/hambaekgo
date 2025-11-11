@@ -11,10 +11,9 @@
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; background-color: #f0f2f5; color: #1a202c; }
         
-        /* Hero Background: Dynamic Ocean Theme - Using a clear blue/sky color for the mood */
+        /* Hero Background: 송도해상케이블카 (Ocean Theme) */
         .hero-bg-busan { 
-            /* Placeholder for a visually appealing Busan ocean image */
-            background-image: linear-gradient(rgba(30, 64, 138, 0.75), rgba(59, 130, 246, 0.75)), url('https://placehold.co/1920x1080/1D4ED8/ffffff?text=Busan+Ocean+View+Placeholder'); 
+            background-image: linear-gradient(rgba(30, 64, 138, 0.75), rgba(59, 130, 246, 0.75)), url('https://busanaircruise.co.kr/images/contents/attraction02.jpg'); 
             background-size: cover;
             background-position: center;
         } 
@@ -29,19 +28,7 @@
         
         html { scroll-behavior: smooth; }
         
-        /* Custom image placeholders for visual appeal until actual images are provided */
-        .placeholder-img {
-            height: 120px;
-            background-color: #e0f2f1; /* Light teal for water theme */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #0d9488; /* Dark teal */
-            border-radius: 0.5rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.875rem;
-        }
+        /* Removed custom .placeholder-img CSS as it is replaced by img tags */
     </style>
 </head>
 <body class="antialiased">
@@ -51,7 +38,6 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker Logo" class="h-8 w-auto">
-                    <!-- 요청에 따라 함백고 졸업여행 문구 삭제 완료 -->
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -89,17 +75,20 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">✨ 졸업여행의 3가지 핵심 테마</h2>
                 <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
                      <div class="bg-blue-600 text-white p-6 rounded-lg shadow-2xl flex flex-col">
-                        <div class="placeholder-img bg-blue-500/20 text-white">⛴️ 부산 밤바다 크루즈 (낭만)</div>
+                        <!-- 이미지 교체: 자갈치 크루즈 -->
+                        <img src="https://static.hanatour.com/product/2022/01/13/0153o92id0/default.jpg" alt="자갈치 크루즈" class="rounded-lg shadow-md mb-3 h-32 w-full object-cover">
                         <h3 class="text-2xl font-bold mb-3 text-center">1. 낭만: 바다의 설렘과 밤의 추억</h3>
                         <p class="flex-grow mb-4 text-sm">정선에서는 볼 수 없었던 탁 트인 푸른 바다! 밤에는 **부산항 밤바다 크루즈**를 타고 화려한 야경 속에서 잊을 수 없는 낭만적인 졸업여행의 추억을 만듭니다.</p>
                     </div>
                     <div class="bg-teal-600 text-white p-6 rounded-lg shadow-2xl flex flex-col">
-                        <div class="placeholder-img bg-teal-500/20 text-white">🎢 롯데월드 + 송도 케이블카 (짜릿함)</div>
+                        <!-- 이미지 교체: 롯데월드 어드벤처 부산 -->
+                        <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FcXyM%2Fimage%2FpnFlsMgixPrajot0BSaICB0eB_Q.jpg" alt="롯데월드 어드벤처 부산" class="rounded-lg shadow-md mb-3 h-32 w-full object-cover">
                         <h3 class="text-2xl font-bold mb-3 text-center">2. 짜릿함: 스릴 만끽, 자유 만끽</h3>
                         <p class="flex-grow mb-4 text-sm">짜릿함과 자유를 만끽하는 하루! **롯데월드 어드벤처 부산**에서 마음껏 스트레스를 날리고, **송도 해상 케이블카**와 용궁 구름다리를 건너며 바다 위를 나는 듯한 스릴을 경험합니다.</p>
                     </div>
                     <div class="bg-indigo-600 text-white p-6 rounded-lg shadow-2xl flex flex-col">
-                        <div class="placeholder-img bg-indigo-500/20 text-white">🏙️ 국제시장 + 남포동 (새로운 시작)</div>
+                        <!-- 이미지 교체: 남포동 국제시장 -->
+                        <img src="https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_1024%2Cw_1024/245e13ad-277a-4902-bfcd-84b577d841f4.jpeg" alt="남포동 국제시장" class="rounded-lg shadow-md mb-3 h-32 w-full object-cover">
                         <h3 class="text-2xl font-bold mb-3 text-center">3. 미래: 대도시의 활기와 자유 시간</h3>
                         <p class="flex-grow mb-4 text-sm">활기찬 국제시장, 남포동, 자갈치시장에서 부산의 에너지를 느낍니다. 도보 접근성이 뛰어난 숙소 근처에서 친구들과 함께 자유롭고 알찬 시간을 보냅니다.</p>
                     </div>
@@ -115,8 +104,8 @@
                     <div class="relative pl-8">
                         <div class="timeline-item pb-12">
                             <div class="timeline-dot"></div>
-                            <h3 class="text-xl font-bold mb-2">DAY 1: 부산 도착 & 바다 낭만</h3>
-                            <p class="text-gray-600">학교 출발, 태종대 및 송도 해상 케이블카/구름다리 체험 후, **밤바다 크루즈**로 부산 야경 만끽.</p>
+                            <h3 class="text-xl font-bold mb-2">DAY 1: 부산 도착 & 크루즈 탑승 (순서 변경)</h3>
+                            <p class="text-gray-600">학교 출발, 태종대 및 송도 케이블카 체험 후, **석식 이전에 밤바다 크루즈 탑승**.</p>
                         </div>
                         <div class="timeline-item pb-12">
                             <div class="timeline-dot"></div>
@@ -154,7 +143,8 @@
              <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">🏨 숙소 안내: 그린핀베이 호텔 (확정, 2인 1실)</h2>
                 <div class="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
-                    <div class="placeholder-img h-64 text-2xl bg-blue-100 text-blue-700">그리핀베이 호텔 (남포동 도보권)</div>
+                    <!-- 숙소 이미지: 그린핀베이 호텔 실제 사진 반영 -->
+                    <img src="https://yaimg.yanolja.com/v5/2022/08/26/14/6308d56cd048e4.49482703.jpg" alt="그린핀베이 호텔 객실 내부 이미지" class="rounded-lg shadow-md mb-8 w-full object-cover max-h-64">
                     
                     <div class="grid md:grid-cols-2 gap-8 mt-8 text-lg">
                         <div class="p-4 border-l-4 border-blue-700 bg-blue-50 rounded-r-lg">
@@ -245,15 +235,15 @@
             // --- 2. Itinerary Tab Content (Finalized with optimal cruise time and confirmed hotel) ---
             const scheduleData = {
                 day1: {
-                    title: 'DAY 1: 12월 1일 (월) - 바다와의 설레는 첫 만남',
+                    title: 'DAY 1: 12월 1일 (월) - 바다와의 설레는 첫 만남 (일정 순서 변경)',
                     items: [
                         { time: '08:00', desc: '학교 출발 (전용 버스)', icon: '🚌' },
-                        { time: '12:30 ~ 13:30', desc: '중식: **경기식당 (낚지볶음)**', icon: '🍽️' },
-                        { time: '13:30 ~ 16:00', desc: '부산의 명소 **태종대** 관람', icon: '⛰️' },
-                        { time: '16:30 ~ 17:30', desc: '바다 위를 걷다! **송도 해상 케이블카** 및 **용궁 구름다리** 체험 (도보 이동)', icon: '🚠' },
-                        { time: '17:30', desc: '숙소 이동 및 **호텔 체크인** (**그린핀베이 호텔** 확정)', icon: '🔑' },
-                        { time: '18:30', desc: '석식: **쿠우쿠우 (다이닝원 리브랜딩, Sushi-Roll & Salad Bar)** 뷔페', icon: '🍣' },
-                        { time: '19:30', desc: '<strong class="text-red-600">⭐ 낭만적인 밤바다 크루즈 탑승</strong> (동절기 기준, 석식 후 최적 동선)', icon: '⛴️' },
+                        { time: '12:30 ~ 13:30', desc: '중식: **경기식당 (낚지볶음)**', icon: '🍽️', img: 'https://d12zq4w4guyljn.cloudfront.net/300_300_20220925031607_photo2_e578de3be6e6.webp' },
+                        { time: '13:30 ~ 16:00', desc: '부산의 명소 **태종대** 관람', icon: '⛰️', img: 'https://www.telltrip.com/wp-content/uploads/2025/02/Busan-Korea-tourist-attractions1.jpg' },
+                        { time: '16:30 ~ 17:30', desc: '바다 위를 걷다! **송도 해상 케이블카** 및 **용궁 구름다리** 체험 (도보 이동)', icon: '🚠', img: 'https://busanaircruise.co.kr/images/contents/attraction02.jpg' },
+                        { time: '17:30 ~ 19:00', desc: '<strong class="text-red-600">⭐ 낭만적인 밤바다 크루즈 탑승</strong> (동절기 운영 시간 고려, 석식 이전 마무리)', icon: '⛴️', img: 'https://static.hanatour.com/product/2022/01/13/0153o92id0/default.jpg' },
+                        { time: '19:30 ~ 20:30', desc: '석식: **쿠우쿠우 (다이닝원 리브랜딩, Sushi-Roll & Salad Bar)** 뷔페', icon: '🍣', img: 'https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjVfMTQ3/MDAxNzI0NTEyMzIwMjY0.1I4JUAb4eWebSWdNt0hB6iZ1L5QzImB61A0fg4_xce4g.Ja9-vILhLeCtw10NrUqAWw0FUVK6Uo2lqh8ibla8724g.JPEG/%EA%B2%BD%EC%84%B1%EB%8C%80_%EC%BF%A0%EC%9A%B0%EC%BF%A0%EC%9A%B0-22.jpg?type=w400' },
+                        { time: '20:30', desc: '숙소 이동 및 **호텔 체크인** (**그린핀베이 호텔** 확정)', icon: '🔑' },
                         { time: '21:30', desc: '숙소 복귀 및 **자유시간**', icon: '🛌' },
                     ]
                 },
@@ -262,19 +252,20 @@
                     items: [
                         { time: '08:00 ~ 09:00', desc: '기상 및 **조식 (호텔 뷔페)**', icon: '🥐' },
                         { time: '09:00 ~ 10:00', desc: '롯데월드 어드벤처 부산으로 이동', icon: '🚌' },
-                        { time: '10:00 ~ 17:00', desc: '짜릿함 만끽! **롯데월드 어드벤처 부산** 자유 이용', icon: '🎢' },
+                        { time: '10:00 ~ 17:00', desc: '짜릿함 만끽! **롯데월드 어드벤처 부산** 자유 이용', icon: '🎢', img: 'https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FcXyM%2Fimage%2FpnFlsMgixPrajot0BSaICB0eB_Q.jpg' },
                         { time: '중식', desc: '롯데월드 내 **밀쿠폰** 사용', icon: '🍔' },
                         { time: '17:00 ~ 18:00', desc: '석식: **하루 샤브샤브 뷔페**', icon: '🍲' },
                         { time: '18:30 ~ 19:00', desc: '숙소로 이동 및 복귀', icon: '🚌' },
-                        { time: '19:00 ~', desc: '숙소 도착 및 **자유시간** (남포동, 국제시장, 자갈치시장 등 도보 관람 가능)', icon: '🛍️' },
+                        { time: '19:00 ~', desc: '숙소 도착 및 **자유시간** (남포동, 국제시장, 자갈치시장 등 도보 관람 가능)', icon: '🛍️', img: 'https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_1024%2Cw_1024/245e13ad-277a-4902-bfcd-84b577d841f4.jpeg' },
                     ]
                 },
                 day3: {
                     title: 'DAY 3: 12월 3일 (수) - 해운대 & 귀가',
                     items: [
                         { time: '08:00 ~ 09:00', desc: '기상 및 **조식 (호텔 뷔페)**, 짐정리 및 체크아웃', icon: '☕' },
-                        { time: '10:00 ~ 12:00', desc: '해운대 **씨라이프 아쿠아리움** 관람 및 해운대 자유시간', icon: '🐠' },
-                        { time: '12:00 ~ 13:00', desc: '중식: **국밥 + 수육**', icon: '🍚' },
+                        { time: '10:00 ~ 12:00', desc: '해운대 **씨라이프 아쿠아리움** 관람', icon: '🐠', img: 'https://www.visitsealife.com/busan/media/whml5jxc/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%EC%A0%95%EB%B3%B4.jpg' },
+                        { time: '10:00 ~ 12:00', desc: '해운대 자유시간', icon: '🏖️', img: 'https://www.visitbusan.net/uploadImgs/files/cntnts/20191229153530528' },
+                        { time: '12:00 ~ 13:00', desc: '중식: **국밥 + 수육**', icon: '🍚', img: 'https://d12zq4w4guyljn.cloudfront.net/750_750_20250625084813_menu1_f9531a15356a.webp' },
                         { time: '13:00 ~ 17:30', desc: '학교로 이동', icon: '🚌' },
                         { time: '18:00 ~', desc: '학교 도착 후 귀가', icon: '🏠' },
                     ]
@@ -286,9 +277,34 @@
 
             function renderTabContent(day) {
                 const data = scheduleData[day];
-                let content = `<h3 class="text-2xl font-bold mb-6">${data.title}</h3><ul class="space-y-4">`;
+                let content = `<h3 class="text-2xl font-bold mb-6">${data.title}</h3><ul class="space-y-6">`;
+                
                 data.items.forEach(item => {
-                    content += `<li class="flex items-start"><span class="text-2xl mr-4">${item.icon}</span><div><p class="font-bold text-gray-800">${item.time}</p><p class="text-gray-600">${item.desc}</p></div></li>`;
+                    // Check if image URL exists and generate image tag
+                    // 이미지 주소에서 이미지 alt 텍스트를 생성 (HTML 태그 제거)
+                    const altText = item.desc.replace(/<[^>]*>?/gm, '').replace(/\*\*/g, '');
+                    let imageHtml = item.img ? `<img src="${item.img}" alt="${altText}" class="rounded-lg shadow-md mt-2 w-full object-cover max-h-40">` : '';
+
+                    let timeClass = item.time.includes('숙소') || item.time.includes('식사') || item.desc.includes('뷔페') ? 'bg-indigo-100 text-indigo-700' : 'bg-blue-100 text-blue-700';
+
+                    // 강조할 일정에만 특별한 배경색을 추가
+                    if (item.time.includes('⭐')) {
+                        timeClass = 'bg-red-100 text-red-700 border-l-4 border-red-500';
+                    }
+
+                    content += `
+                        <li class="flex items-start p-4 bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                            <span class="text-3xl mr-4 flex-shrink-0">${item.icon}</span>
+                            <div class="flex flex-col sm:flex-row sm:justify-between w-full">
+                                <div class="w-full sm:w-3/4">
+                                    <p class="font-bold text-lg text-gray-800">${item.desc}</p>
+                                    ${imageHtml}
+                                </div>
+                                <div class="time-box mt-2 sm:mt-0 sm:ml-4 w-fit ${timeClass}">
+                                    ${item.time.replace('⭐ ', '')}
+                                </div>
+                            </div>
+                        </li>`;
                 });
                 content += '</ul>';
                 
